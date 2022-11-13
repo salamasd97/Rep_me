@@ -9,4 +9,4 @@ def array(n,m):
             break
     print()
 
-array(sys.argv[1],sys.argv[2])
+array(int(sys.argv[1]),int(sys.argv[2]))
