@@ -1,12 +1,13 @@
 import sys
 
 def array(n,m):
+    result = ""
     i = 1
     while True:
-        print(i)
+        result += str(i)
         i = 1 + (i + m - 2) % n
         if i == 1:
             break
-    print()
+    return result
 
-array(int(sys.argv[1]),int(sys.argv[2]))
+print(array(int(sys.argv[1]),int(sys.argv[2])))
